@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Form</h2>
+    <form action="backend.php">
+        <label for="name">Name </label>
+        <div>
+            <input type="text" name="myname" id="name">
+            <!-- name is accessible when backend needs to perform or take input  -->
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="mybonus">
+            <!-- we can also use alphabet 'e' in number because it is use to show exponential -->
+        </div>
+        <br>
+        <label for="eligible">Are you eligible?:</label>
+        <div>
+            <input type="checkbox" name="myeligibility" id="eligible" >
+            <!-- checked it is use to show by default check sign  -->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender" id=""> Female <input type="radio" name="mygender" id="">
+            Other <input type="radio" name="mygender" >
+        </div>
+        <br>
+        <div>
+         Write about yourself <br><textarea name="myText"  cols="30" rows="10"></textarea>
+         <!-- textarea it is use to take long inputs or in the form of paragraph  --> 
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="swiftdesire">Swift Desire</option>
+                <option value="tesla" selected>Tesla</option>
+                <!-- if you want to select by default then add selected -->
+                <option value="alto">Alto</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+</body>
+
+</html>
